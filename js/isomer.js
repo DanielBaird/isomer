@@ -15,7 +15,7 @@ function Isomer(canvasId, options) {
   options = options || {};
 
   this.canvas = new Canvas(canvasId);
-  this.angle = Math.PI / 6;
+  this.angle = options.angle || (Math.PI / 6);
 
   this.scale = options.scale || 70;
 
